@@ -1,0 +1,89 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/models/user.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/controllers/home_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        7,
+        null,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/williamratterman/Turing/mod3/projects/Apicurious/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1503428422
+  }
+}
