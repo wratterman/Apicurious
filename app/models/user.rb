@@ -11,4 +11,8 @@ class User < ApplicationRecord
       new_user.oauth_token_secret  = auth_info[:credentials][:secret]
     end
   end
+
+  def get_account
+    GithubService.find_account(self.oauth_token)
+  end
 end

@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 describe "Logged In User" do
   it "user can view their account" do
 
