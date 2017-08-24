@@ -15,4 +15,24 @@ class User < ApplicationRecord
   def get_account
     GithubService.find_account(self.oauth_token)
   end
+
+  def get_recent_commits
+    GithubService.find_commits(self.oauth_token, self.username)
+  end
+
+  def get_followers
+    GithubService.find_followers(self.oauth_token, self.username)
+  end
+
+  def get_following
+    GithubService.find_who_i_follow(self.oauth_token, self.username)
+  end
+
+  def get_orgs
+    GithubService.find_orgs(self.oauth_token, self.username)
+  end
+
+  def get_repos
+    GithubService.find_repos(self.oauth_token, self.username)
+  end
 end

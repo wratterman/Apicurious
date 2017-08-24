@@ -3,3 +3,21 @@ Hello <%= current_user.name %>
 Username: <%= current_user.username %>
 
 Email: <%= current_user.email %>
+
+<li>Repos(# of: <%= @repos.count  %>): <% @repos.each do |repo| %>
+    <ul>
+      <%= repo["name"] %>
+    </ul>
+<% end %></li>
+
+<li>Followers(# of: <%= @followers.count  %>): <% @followers.each do |follower| %>
+    <ul>
+      <%= follower["login"] %>
+    </ul>
+<% end %></li>
+
+<li>Following(# of: <%= @following.count  %>): <% @following.each do |follow| %>
+    <ul>
+      <%= follow["login"] %>
+    </ul>
+<% end %></li>
