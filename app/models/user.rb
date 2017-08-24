@@ -16,6 +16,10 @@ class User < ApplicationRecord
     GithubService.find_account(self.oauth_token)
   end
 
+  def get_starred_repos
+    GithubService.find_starred(self.oauth_token, self.username)
+  end
+
   def get_recent_commits
     GithubService.find_commits(self.oauth_token, self.username)
   end

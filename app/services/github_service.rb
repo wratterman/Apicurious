@@ -13,6 +13,10 @@ class GithubService
     new(token, nil).find_my_account
   end
 
+  def self.find_starred(token, user)
+    new(token, user).find_my_starred_repos
+  end
+
   def self.find_commits(token, user)
     new(token, user).find_my_commits
   end
@@ -35,6 +39,10 @@ class GithubService
 
   def find_my_account
     get_url("/user?access_token=#{@token}")
+  end
+
+  def find_my_starred_repos
+    get_url("users/#{@user}/starred?access_token=#{@token}")
   end
 
   def find_my_commits
