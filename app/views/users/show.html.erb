@@ -1,0 +1,28 @@
+Hello <%= current_user.name %>
+
+<li><strong>Username</strong>: <%= current_user.username %></li>
+
+<li><strong>Email</strong>: <%= current_user.email %></li>
+
+<li><strong>Starred Repos(# of: <%= @starred.count  %>)</strong>: <% @starred.each do |repo| %>
+    <ul>Repo Name: <%= link_to repo["name"], repo["html_url"] %></ul>
+    <ul>Repo Owner: <%= link_to repo["owner"]["login"], repo["owner"]["html_url"] %></ul>
+<% end %></li>
+
+<li><strong>Repos(# of: <%= @repos.count  %>)</strong>: <% @repos.each do |repo| %>
+    <ul>
+      Repo Name: <%= link_to repo["name"], repo["html_url"] %>
+    </ul>
+<% end %></li>
+
+<li><strong>Followers(# of: <%= @followers.count  %>)</strong>: <% @followers.each do |follower| %>
+    <ul>
+      Follower: <%= link_to follower["login"], follower["html_url"] %>
+    </ul>
+<% end %></li>
+
+<li><strong>Following(# of: <%= @following.count  %>)</strong>: <% @following.each do |follow| %>
+    <ul>
+      Following: <%= link_to follow["login"], follow["html_url"] %>
+    </ul>
+<% end %></li>
